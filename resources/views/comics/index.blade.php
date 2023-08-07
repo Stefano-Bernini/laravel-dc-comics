@@ -11,7 +11,6 @@
                             <th>Titolo</th>
                             <th>Serie</th>
                             <th>Prezzo</th>
-                            <th>Azioni</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -22,7 +21,7 @@
                                 <td>{{ $comic->series }}</td>
                                 <td>{{ $comic->price }}</td>
                                 <td>
-                                    <a href="{{ route('comic.show', $comic->id)}}">
+                                    <a class="bt btn-sm btn-primary" href="{{ route('comics.show', $comic->id)}}">
                                         <i class="fas fa-eye"></i>
                                     </a>
                                 </td>

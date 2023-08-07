@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <a class="btn btn-primary" href="">Visualizza tutti i fumetti</a>
+                <a class="btn btn-primary" href="{{ route('comics.index')}}">Visualizza tutti i fumetti</a>
             </div>
         </div>
     </div>
