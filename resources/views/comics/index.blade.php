@@ -4,6 +4,9 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-12">
+                <a class="btn btn-sm btn-primary" href="{{ route('comics.create') }}">Aggiungi fumetto</a>
+            </div>
+            <div class="col-12">
                 <table class="table">
                     <thead>
                         <tr>
@@ -21,7 +24,7 @@
                                 <td>{{ $comic->series }}</td>
                                 <td>{{ $comic->price }}</td>
                                 <td>
-                                    <a class="bt btn-sm btn-primary" href="{{ route('comics.show', $comic->id)}}">
+                                    <a class="btn btn-sm btn-primary" href="{{ route('comics.show', $comic->id)}}">
                                         <i class="fas fa-eye"></i>
                                     </a>
                                 </td>
