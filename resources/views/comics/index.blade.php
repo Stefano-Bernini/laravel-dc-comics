@@ -7,7 +7,7 @@
                 <a class="btn btn-sm btn-primary" href="{{ route('comics.create') }}">Aggiungi fumetto</a>
             </div>
             <div class="col-12">
-                <table class="table">
+                <table class="table text-center">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -15,6 +15,7 @@
                             <th>Serie</th>
                             <th>Prezzo</th>
                             <th>Tipo</th>
+                            <th>Azioni</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,6 +33,13 @@
                                     <a class="btn btn-warning btn-sm" href="{{route('comics.edit', $comic->id)}}">
                                         <i class="fas fa-edit"></i>
                                     </a>
+                                    <form class="d-inline-block" action="{{route('comics.destroy', $comic->id)}}}}" onsubmit="return confirm('Sei ssicuro di voler cancellare questo elemento?')" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger btn-sm">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach
