@@ -7,7 +7,7 @@
                 <h2>DC Comics</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-12">
                 <a class="btn btn-primary" href="{{ route('comics.index')}}">Visualizza tutti i fumetti</a>
             </div>

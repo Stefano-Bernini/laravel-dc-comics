@@ -2,7 +2,10 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="row my-5">
+            <div class="col-12">
+                <h2>Aggiungi fumetto</h2>
+            </div>
             <div class="col-12">
                 <form action="{{ route('comics.store') }}" method="POST">
                     @csrf
